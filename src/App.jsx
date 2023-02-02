@@ -9,8 +9,10 @@ function App() {
         <nav className="navbar">
           <div className="navbar-items">
             <h1>Job router</h1>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
+            <ul className="navbar-links">
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/about">About</NavLink>
+            </ul>
           </div>
         </nav>
       </header>
