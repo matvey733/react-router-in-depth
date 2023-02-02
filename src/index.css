@@ -42,6 +42,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a {
+  text-decoration: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -107,6 +110,20 @@ main {
   max-width: 600px;
   justify-content: space-between;
   align-items: center;
+}
+
+.navbar a {
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.navbar a.active {
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+
+.navbar h1 {
+  margin-right: auto;
 }
 
 a.active {
