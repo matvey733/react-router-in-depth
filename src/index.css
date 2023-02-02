@@ -94,12 +94,19 @@ main {
 /* navbar */
 .navbar {
   display: flex;
+  justify-content: center;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 2px solid var(--secondary);
   padding: 15px;
   margin-bottom: 20px;
+}
+
+.navbar-items {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a.active {

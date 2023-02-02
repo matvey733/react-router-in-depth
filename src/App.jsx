@@ -7,9 +7,11 @@ function App() {
     <BrowserRouter>
       <header>
         <nav className="navbar">
-          <h1>Job router</h1>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
+          <div className="navbar-items">
+            <h1>Job router</h1>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/about">About</NavLink>
+          </div>
         </nav>
       </header>
       <main>
