@@ -1,4 +1,4 @@
-function Home() {
+export default function Home() {
   return (
     <div className="home">
       <h2>Home route</h2>
@@ -6,5 +6,3 @@ function Home() {
     </div>
   )
 }
-
-export default Home;
