@@ -1,11 +1,13 @@
-import React from 'react'
+import { Outlet } from "react-router-dom"
 
 export default function HelpLayout() {
   return (
     <div className="help-layout">
       <h1>Website help</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates, aspernatur eos ab fuga suscipit nisi dicta rerum? Explicabo sunt quis animi veniam beatae, officia dolore odio? Aspernatur voluptates harum facere doloremque repellendus molestias accusantium facilis sed laudantium soluta. Nesciunt.</p>
-      <Outlet />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus distinctio veniam alias. Hic earum, dicta possimus soluta ad natus magni. Quas, corrupti? Vero eligendi, eius excepturi nisi iure doloribus deleniti.</p>
+      <div className="help-layout-outlet">
+        <Outlet />
+      </div>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import { NavLink, Outlet } from "react-router-dom"
 
 export default function RootLayout() {
   return (
-    <div className="root-layout">
+    <>
       <header>
         <nav className="navbar">
           <div className="navbar-items">
@@ -16,7 +16,6 @@ export default function RootLayout() {
       <main>
         <Outlet />
       </main>
-    </div>
-
+    </>
   )
 }

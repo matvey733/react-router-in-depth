@@ -3,20 +3,22 @@ import {
   createRoutesFromElements,
   RouterProvider,
   Route,
-  Outlet
 } from "react-router-dom";
-import RootLayout from "./layouts/RootLayout";
+// pages
 import Home from "./pages/Home";
 import About from "./pages/About";
+// layouts
+import RootLayout from "./layouts/RootLayout";
+import HelpLayout from "./layouts/HelpLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
-      <Route path="help">
-        <Route path="faq" element={<h1>faq</h1>} />
-        <Route path="contact" element={<h1>contact</h1>} />
+      <Route path="help" element={<HelpLayout />}>
+        <Route path="faq" element={<h1>Lorem ipsum dolor sit amet.</h1>} />
+        <Route path="contact" element={<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, fuga.</h1>} />
       </Route>
     </Route>
   )
